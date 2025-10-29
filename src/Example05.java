@@ -6,7 +6,7 @@ public class Example05 {
     public static void main(String[] args) {
         LocalDateTime dt = LocalDateTime.now();
 //        System.out.println(dt.toString());
-        String filename = "%s.txt".formatted(dt);
+        String filename = "%s.txt".formatted(dt).replace(":", ".");
         File file = new File(filename);
         // Buffer. <- Buffered? <- 저수준 (컴퓨터 자체에 좀 더 가까워서) -> 편의기능 x
         // File <- 편의기능들이 들어가있다...
