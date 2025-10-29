@@ -37,7 +37,7 @@ public class Example05 {
         // Java 대기 기능
         try {
             Thread.sleep(5000);
-            file.delete();
+//            file.delete();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
